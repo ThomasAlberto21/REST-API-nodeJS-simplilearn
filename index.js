@@ -28,4 +28,10 @@ let movies = [
   },
 ];
 
+// GET Movie List
+app.get('/movies', (req, res) => {
+  res.json(movies);
+});
 
+// Set the server to listen on port 3000
+app.listen(port, () => console.log(`Server running on port ${port}`));
